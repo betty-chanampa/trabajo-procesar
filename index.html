@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Procesar Datos</title>
+</head>
+
+<body>
+  <form onsubmit="addNumber(event)">
+    <input id="number" type="number" placeholder="Ingrese un numero">
+    <button type="submit">Agregar Numero</button>
+  </form>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Number</th>
+      </tr>
+    </thead>
+    <tbody id="numberList">
+
+    </tbody>
+  </table>
+
+  <div>
+    <button onclick="processList()">Procesar</button>
+    <ul id="processList">
+
+    </ul>  
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
